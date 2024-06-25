@@ -1,29 +1,23 @@
 from llama_cpp import Llama
 import streamlit as st
 from langchain.llms.base import LLM
-#from llama_index.embeddings import LangchainEmbedding
 from langchain.embeddings import HuggingFaceEmbeddings
 from llama_index.embeddings.langchain import LangchainEmbedding
 from llama_index.core import PromptHelper
 from typing import Optional, List, Mapping, Any
 import pandas as pd
 
-
-# Set the page config as the first command
 st.set_page_config(page_title='Mental Heallth chatbot', page_icon=':robot_face:', layout='wide')
 
-# Define constants
 MODEL_NAME = 'mellogpt.Q3_K_S.gguf'
-MODEL_PATH = 'D:\Paras\Projectss\python\chatbot\mellogpt.Q3_K_S.gguf'
+MODEL_PATH = 'model_path'
 KNOWLEDGE_BASE_FILE = "mentalhealth.csv"
 
-# Configuration
 NUM_THREADS = 8
 MAX_INPUT_SIZE = 2048
 NUM_OUTPUT = 256
 CHUNK_OVERLAP_RATIO = 0.10
 
-# Initialize prompt helper with fallback on exception
 try:
     prompt_helper = PromptHelper(MAX_INPUT_SIZE, NUM_OUTPUT, CHUNK_OVERLAP_RATIO)
 except Exception as e:
