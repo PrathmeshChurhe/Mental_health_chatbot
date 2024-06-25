@@ -38,7 +38,8 @@ cd Mental_health_chatbot
 
 - RUN ```pip install -r requirements.txt```:
   - This line installs the Python dependencies listed in the ```requirements.txt``` file using pip.
-To run Streamlit app, run the following:
+
+- To run Streamlit app, run the following:
 ``` shell
 streamlit run chatbot.py
 ```
