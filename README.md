@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Mental Health Chatbot is an AI-powered chatbot designed to provide mental health support and resources. Leveraging a knowledge base and a custom model from Hugging Face stored in local machine, the chatbot aims to offer empathetic conversations, provide information on various mental health topics, and suggest coping strategies. This project seeks to create a safe and supportive environment for users seeking mental health assistance.
+The Mental Health Chatbot is an AI-powered chatbot designed to provide mental health support and resources. Leveraging a knowledge base and a custom model from Hugging Face stored in a local machine, the chatbot aims to offer empathetic conversations, provide information on various mental health topics, and suggest coping strategies. This project seeks to create a safe and supportive environment for users seeking mental health assistance.
 
 ## Features
 
@@ -22,8 +22,8 @@ The Mental Health Chatbot is an AI-powered chatbot designed to provide mental he
 ### Clone the Repository
 
 ```
-git clone https://github.com/your-username/mental_health_chatbot.git
-cd mental_health_chatbot
+git clone https://github.com/PrathmeshChurhe/Mental_health_chatbot
+cd Mental_health_chatbot
 ```
 
 - ### Create by using Python venv
@@ -34,11 +34,11 @@ cd mental_health_chatbot
 
 - ### activate and initialize virtual env
     - ```conda activate <envname>```
-- Download the model and store it to the same repository as the chatbot.py
+- Download the model and store it in the same repository as the chatbot.py
 
 - RUN ```pip install -r requirements.txt```:
   - This line installs the Python dependencies listed in the ```requirements.txt``` file using pip.
-To run streamlit app, run:
-```shell
-streamlit run chatboy.py
+To run Streamlit app, run the following:
+``` shell
+streamlit run chatbot.py
 ```
